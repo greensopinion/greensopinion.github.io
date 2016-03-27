@@ -14,9 +14,13 @@ All development occurs on `gh-pages` branch.
 
 1. Install Ruby 2.1 (see rvm)
 2. `bundle install`
+3. Get dependencies
+   * git clone git@github.com:ruhoh/theme-bootstrap-2.git theme-bootstrap-2
 
 ## Local Preview
 
 1. `bundle exec ruhoh server 8080`
 
-## Build
+## Build/Publish
+
+1. `bundle exec ruhoh publish github`
