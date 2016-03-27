@@ -1,1 +1,10 @@
 production_url : 'https://greensopinion.github.io'
+"theme-bootstrap-2" :
+  "use" : "theme"
+widgets :
+  analytics :
+    use : google
+    tracking_id : 'UA-3754109-7'
+  google_prettify :
+    use : default
+    linenums : true
