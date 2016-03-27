@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+  <channel>
+    <title>Green's Opinion</title>
+    <description>Green's Opinion</description>
+    <link>https://greensopinion.github.io</link>
+    <pubDate>2016-03-27</pubDate>
+    <item>
+      <title>About</title>
+      <link>https://greensopinion.github.io/about</link>
+      <pubDate>2016-03-27</pubDate>
+      <description>Green's Opinion, a site from David Green</description>
+    </item>
+    <item>
+      <title>Archive</title>
+      <link>https://greensopinion.github.io/archive</link>
+      <description>
+</description>
+    </item>
+    <item>
+      <title>Categories</title>
+      <link>https://greensopinion.github.io/categories</link>
+      <description>
+&lt;ul class="tag_box inline"&gt;
+&lt;/ul&gt;
+
+</description>
+    </item>
+    <item>
+      <title>Green's Opinion</title>
+      <link>https://greensopinion.github.io/</link>
+      <pubDate>2016-03-27</pubDate>
+      <description>Green's Opinion, a site from David Green</description>
+    </item>
+    <item>
+      <title>Home</title>
+      <link>https://greensopinion.github.io/</link>
+      <description>## Hello World
+
+
+&lt;div class="pagination"&gt;
+  &lt;ul&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    <item>
+      <title>Pages</title>
+      <link>https://greensopinion.github.io/pages</link>
+      <description>
+&lt;ul&gt;
+  
+    &lt;li&gt;&lt;a href="/about"&gt;About&lt;/a&gt;&lt;/li&gt;
+  
+  
+    &lt;li&gt;&lt;a href="/archive"&gt;Archive&lt;/a&gt;&lt;/li&gt;
+  
+  
+    &lt;li&gt;&lt;a href="/categories"&gt;Categories&lt;/a&gt;&lt;/li&gt;
+  
+  
+    &lt;li&gt;&lt;a href="/"&gt;Green&amp;#39;s Opinion&lt;/a&gt;&lt;/li&gt;
+  
+  
+    &lt;li&gt;&lt;a href="/"&gt;Home&lt;/a&gt;&lt;/li&gt;
+  
+    &lt;li class="active"&gt;&lt;a href="/pages" class="active"&gt;Pages&lt;/a&gt;&lt;/li&gt;
+  
+  
+  
+    &lt;li&gt;&lt;a href="/tags"&gt;Tags&lt;/a&gt;&lt;/li&gt;
+  
+&lt;/ul&gt;
+</description>
+    </item>
+    <item>
+      <title>Tags</title>
+      <link>https://greensopinion.github.io/tags</link>
+      <description>
+&lt;ul class="tag_box inline"&gt;
+&lt;/ul&gt;
+
+ 
+</description>
+    </item>
+  </channel>
+</rss>
