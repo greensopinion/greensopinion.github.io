@@ -1,4 +1,3 @@
-vendor
-.bundle
-Gemfile.lock
-theme-bootstrap-2
+_site
+.sass-cache
+.jekyll-metadata

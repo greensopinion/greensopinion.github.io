@@ -1,8 +1,0 @@
----
-title: Green's Opinion
-date: "2016-03-27"
-description: Green's Opinion, a site from David Green
-tags: ["blog", "opinion", "open source"]
----
-
-Welcome to Green's Opinion, a site by David Green.
