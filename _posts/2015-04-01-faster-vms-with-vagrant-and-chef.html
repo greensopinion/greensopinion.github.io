@@ -6,6 +6,7 @@ author: David Green
 tags:
 modified_time: '2015-04-01T14:04:00.000-08:00'
 original_url: http://www.tasktop.com/content/blog-entry/faster-vms-vagrant-and-chef
+comments: true
 ---
 
 <p>Developing and testing changes in an environment that is the same as the deployment environment is one of the magic ingredients of the DevOps way. For engineers at Tasktop working on the <a href="https://blog.tasktop.com/greens-opinion/testing-for-the-api-economy">Integration Factory</a>, provisioning a new VM can occur multiple times in a day, so any inefficiencies in the process are painful. I recently stumbled across <a href="https://github.com/fgrehm/vagrant-cachier">vagrant-cachier</a> which reduces network usage and speeds up local Vagrant-based provisioning, drastically improving VM provisioning times.</p><p>Install vagrant-cachier as follows:</p><pre style="font-family: monospace;">$ vagrant plugin install vagrant-cachier
