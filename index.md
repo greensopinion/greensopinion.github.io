@@ -2,7 +2,7 @@
 layout: page
 ---
 
-Welcome to Green's Opinion, a site by [David Green](about).  Here are some of my projects:
+Welcome to Green's Opinion, where you can find out more about [David Green](about) and my projects.  Here are some highlights:
 
 <div class="row">
   <div class="col-sm-6 col-md-6">
