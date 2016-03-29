@@ -1,0 +1,17 @@
+---
+layout: imported-post
+title: Good Things Come In Threes
+date: '2010-02-05T21:31:00.000-08:00'
+author: David Green
+tags:
+- Mylyn
+- EGit
+- Git
+- GitHub
+- Eclipse
+modified_time: '2010-02-06T19:04:00.050-08:00'
+blogger_id: tag:blogger.com,1999:blog-1482979278030787271.post-3469662986004145069
+blogger_orig_url: http://greensopinion.blogspot.com/2010/02/good-things-come-in-threes.html
+---
+
+<p>Hundreds of developers at Eclipse.org are on the cusp of something great.  After <a href="http://greensopinion.blogspot.com/2008/06/why-is-eclipseorg-still-on-cvs.html">lamenting the pains</a> of the dark ages and thinking it wouldn't end, Eclipse's focus on best practices has resulted in a <a href="https://bugs.eclipse.org/249745">decision</a> to move to <a href="http://git-scm.com/">Git</a>.  With tooling integration being such a key factor, it's no surprise that everyone's eyes are on the <a href="http://www.eclipse.org/egit/">EGit</a> project.  I figured it was time to give it a spin after a <a href="http://aniszczyk.org/2010/01/29/calling-eclipse-org-projects-interested-in-git/">recent call</a> for project trials.  This is how my adventures with GitHub, EGit and Mylyn began.</p><p>To kick it off, reading the <a href="http://progit.org/">progit book</a> helped with the Git basics, and Lars Vogel's excellent <a href="http://www.vogella.de/articles/EGit/article.html">EGit tutorial</a> got me up to speed with EGit.  Knowing the only way to learn is to do it, I created an account on GitHub and kicked off a new project for the purpose.</p><p>Keeping focused on the issue at hand is key, so naturally I use <a href="http://www.eclipse.org/mylyn">Mylyn</a> &mdash; but wait!  There's even a GitHub connector for Mylyn!  To my disappointment after installing it, I realized that the connector was missing some key features, such as being able to edit and close tasks from within the Eclipse IDE.  Time to get hacking!  This is where the power of Git really kicked in.</p><p>Within moments I <a href="http://github.com/dgreen99/org.eclipse.mylyn.github">cloned the GitHub Mylyn connector project</a> and got to work.  Luckily the code was in great shape before I started, and within a few hours I had implemented a functional Mylyn task editor for GitHub.  It's trivial for the connector project committers to pull my contributions back into their project.</p><p>Though Git itself is not simple to use, it eliminates many barriers and eases community collaboration.  EGit integrates first-class support for Git into Eclipse, overcoming much of the complexity of using Git.</p><p>Eclipse's ability to collaborate within its project teams and with its wide user community will step into high gear this year.  A continued focus on best practices and adoption of enabling technologies such as Git and EGit will make it happen.</p>

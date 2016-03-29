@@ -33,7 +33,7 @@ Welcome to Green's Opinion, where you can find out more about [David Green](abou
       <img src="images/mylyn-wikitext.png" class="img-rounded" width="400px" alt="GreenBeans chart, monthly expenses by category"/>
       <div class="caption">
         <p>
-        Mylyn WikiText is for rendering, transforming and manipulating Markdown, CommonMark, Asciidoc, Textile, HTML, Docbook, Dita, and may other forms of rich text.
+        Mylyn WikiText is for rendering, transforming and manipulating Markdown, CommonMark, Asciidoc, Textile, HTML, Docbook, Dita, and many other forms of rich text.
         </p>
         <p>
         Mylyn WikiText integrates with Eclipse, Maven and Ant.  WikiText also provides APIs for integrating rich text into your application.

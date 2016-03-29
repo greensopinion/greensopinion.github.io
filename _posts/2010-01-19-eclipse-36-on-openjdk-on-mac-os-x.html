@@ -1,0 +1,18 @@
+---
+layout: imported-post
+title: Eclipse 3.6 on OpenJDK on Mac OS X
+date: '2010-01-19T11:00:00.000-08:00'
+author: David Green
+tags:
+- Java
+- JDK7
+- Java 6
+- Eclipse
+- Java 7
+- mac
+modified_time: '2010-01-19T10:07:56.189-08:00'
+blogger_id: tag:blogger.com,1999:blog-1482979278030787271.post-5738821495883213064
+blogger_orig_url: http://greensopinion.blogspot.com/2010/01/eclipse-36-on-openjdk-on-mac-os-x.html
+---
+
+<p>Eclipse 3.6 (aka Helios) will run on OpenJDK on Mac when it's released this year.  This will free us from Apple's <a href="http://www.google.com/search?q=13949712720901ForOSX">oft-criticized</a> and historically slow release cycle of the Java VM.</p><p>With a little persistence and help from some committers at Eclipse, the most glaring problems were resolved:</p><ul><li><a href="https://bugs.eclipse.org/276564">bug 276564:</a>Eclipse won't launch using JDK 7 because SWT native libraries don't load</li><li><a href="https://bugs.eclipse.org/276763">bug 276763</a>: [launcher] launcher fails to use OpenJDK-based VM when -vm is specified</li></ul><p>If you're interested in trying it out, you'll need to get an integration build of Eclipse (see <a href="http://download.eclipse.org/eclipse/downloads/#3.6%20Stream%20Integration%20Build">3.6 Stream Integration Builds</a>) I20100119-0800 or newer, or a nighly build N20100117-2000 or newer.  Prior to these builds, running Ecilpse on OpenJDK on a mac was only possible with <a href="http://greensopinion.blogspot.com/2009/05/eclipse-35-galileo-on-jdk-7.html">some trickery</a>.  You'll also need a working OpenJDK on your mac, which can be built from source using <a href="http://wikis.sun.com/display/OpenJDK/Darwin9Build">these instructions</a>, or installed using mac ports.</p><p>Many thanks to the Eclipse team for helping, notably Andrew Niefer, Mike Wilson, Kevin Barnes, Grant Gayed, Felipe Heidrich, Thomas Watson, Steve Northover and Silenio Quarti.</p>

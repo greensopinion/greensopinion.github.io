@@ -10,9 +10,14 @@ title: Green's Opinion
 email: dgreen99@gmail.com
 description: Green's Opinion provides insight and opinions on software, open source, and the world.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://greensopinion.github.io" # the base hostname & protocol for your site
+url: "https://greensopinion.com" # the base hostname & protocol for your site
 twitter_username: dgreen
 github_username:  greensopinion
 
 # Build settings
 markdown: kramdown
+
+pages_list:
+  Blog: '/blog'
+  Archive: '/archive'
+  About: '/about'

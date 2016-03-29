@@ -1,0 +1,16 @@
+---
+layout: imported-post
+title: Eclipse Ganymede on SoyLatte (Mac+Java6+Eclipse)
+date: '2008-08-06T17:07:00.000-07:00'
+author: David Green
+tags:
+- Java 6
+- SoyLatte
+- Eclipse
+- mac
+modified_time: '2009-05-11T13:05:51.984-07:00'
+blogger_id: tag:blogger.com,1999:blog-1482979278030787271.post-2779556195936190058
+blogger_orig_url: http://greensopinion.blogspot.com/2008/08/eclipse-ganymede-on-soylatte.html
+---
+
+Mac has no Java 6.  The <a href="http://docs.info.apple.com/article.html?artnum=307403">Java 6 beta that Apple released is only 64-bit</a>, which is no good for running Eclipse.  Not only is this a major annoyance, it is a problem for developers that need to profile and take heap dumps of their applications.<div><br /></div><div>Some time ago I found <a href="http://mail.openjdk.java.net/pipermail/porters-dev/2007-December/000019.html">this post</a> by Landon Fuller which supposedly launches Eclipse on <a href="http://landonf.bikemonkey.org/static/soylatte">SoyLatte</a>.  While I believe that Landon is a genius, it did not work for me.  Well lately I've needed to take some heap dumps, so I tried again.  </div><div><br /></div><div>Here's what worked for me:</div><div><code><br />/Users/dgreen/Documents/java/soylatte16-i386-1.0.2/bin/java  -server -Xms128m -Xmx1536m -XX:MaxPermSize=256m -Dosgi.requiredJavaVersion=1.5 -Dorg.eclipse.swt.internal.carbon.smallFonts  -Djava.library.path=/Users/dgreen/bin/jnilib  -cp /Applications/eclipse/Eclipse.app/Contents/MacOS/../../../plugins/org.eclipse.equinox.launcher_1.0.100.v20080509-1800.jar org.eclipse.equinox.launcher.Main -os macosx -ws carbon -arch x86 -showsplash -launcher /Applications/eclipse/Eclipse.app/Contents/MacOS/eclipse -name Eclipse --launcher.library /Applications/eclipse/Eclipse.app/Contents/MacOS//../../../plugins/org.eclipse.equinox.launcher.carbon.macosx_1.0.100.v20080509-1800/eclipse_1114.so -startup /Applications/eclipse/Eclipse.app/Contents/MacOS/../../../plugins/org.eclipse.equinox.launcher_1.0.100.v20080509-1800.jar -data /Users/dgreen/Documents/workspace -launcher /Applications/eclipse/Eclipse.app/Contents/MacOS/eclipse -keyring /Users/dgreen/.eclipse_keyring -consoleLog -showlocation -vm /Users/dgreen/Documents/java/soylatte16-i386-1.0.2<br /></code><br /></div><div>I also had to extract all *.jnilib files from <tt>eclipse/plugins/org.eclipse.swt.carbon.macosx_3.4*.jar</tt> and copy them into <tt>/Users/dgreen/bin/jnilib</tt></div><div>Finally, Eclipse running in a Java 6 VM on a Mac!  Apple, time to get your Java act in gear.</div><div><br /></div><div><i>Update 2008-08-21: </i>SoyLatte 1.0.2 works for me, but 1.0.3 and <a href="http://landonf.bikemonkey.org/code/java/OpenJDK_7_Binaries.20080820.html">OpenJDK 7 darwin packages posted here</a> don't.  If you find a solution, please let me know!</div><br /><div><i>Update 2009-05-11:</i> See this related article <a href="http://greensopinion.blogspot.com/2009/05/eclipse-35-galileo-on-jdk-7.html">Eclipse 3.5 (Galileo) on Java 7</a></div>

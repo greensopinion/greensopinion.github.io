@@ -1,0 +1,18 @@
+---
+layout: imported-post
+title: Optimizing Screen Real-Estate in Eclipse
+date: '2008-07-08T20:26:00.000-07:00'
+author: David Green
+tags:
+- View
+- Mylyn
+- Perspective
+- MDD
+- Eclipse
+- UI
+modified_time: '2008-07-08T21:02:43.550-07:00'
+blogger_id: tag:blogger.com,1999:blog-1482979278030787271.post-1935939954997587869
+blogger_orig_url: http://greensopinion.blogspot.com/2008/07/optimizing-screen-real-estate-in.html
+---
+
+I recently read <a href="http://www.webfoot.com/blog/category/programmer-productivity/">an article</a> stating that the Eclipse Package Explorer and Outline view are wasted space.  Mylyn also <a href="http://wiki.eclipse.org/index.php/Mylyn/User_Guide#Eclipse_settings">recommends</a> minimizing or closing the Outline view.  Eclipse makes it really easy to make views go away with <a href="http://www.cornilliac.com/blog/2007/08/how-to-use-eclipse-fast-view/">fast views</a> and minimizing tab groups.  An in-place Outline can be activated with Ctrl+O.  All of these focus on providing maximum screen real-estate for editors.  While these paradigms work really well for many editors, some editors are designed to make use of the Outline view and Properties view as integral parts of the editor.  So how does a tool designer resolve this tension between editor styles?  <div><br /></div><div><div><div>Imagine that a developer is switching from a Java source editor -- where views should be minimized -- to an editor that makes use of the properties view and outline view.  When switching back and forth the developer is going to feel friction.  To try this out, try using the XSD editor in Eclipse with the properties view.</div><div><br /></div><div>Enter the editor-controls-view paradigm.</div><div><br /></div><div>For editors that require the outline and properties views, the editor 'restores' the views to their visible state when the editor gains focus.  When such an editor loses focus, the views are minimized to their iconized state.   Eclipse could support this editor-controls-view paradigm by allowing editors to declare their affinity with specific views. </div><div><br /></div><div>This solution provides an optimal use of screen real-estate for both editing scenarios without requiring the developer to take additional action every time she switches editors.  It also does not require the developer to switch perspectives, which is a heavier solution to the same problem.</div></div></div>

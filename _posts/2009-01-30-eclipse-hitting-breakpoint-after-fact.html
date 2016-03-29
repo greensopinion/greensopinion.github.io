@@ -1,0 +1,13 @@
+---
+layout: imported-post
+title: 'Eclipse: Hitting a Breakpoint After The Fact'
+date: '2009-01-30T15:02:00.000-08:00'
+author: David Green
+tags: 
+modified_time: '2009-01-30T15:09:46.839-08:00'
+thumbnail: http://1.bp.blogspot.com/_vw9l2nnub6c/SYOITeTyHzI/AAAAAAAAACg/uU_0Jn3386k/s72-c/Picture+2.png
+blogger_id: tag:blogger.com,1999:blog-1482979278030787271.post-236556181710520747
+blogger_orig_url: http://greensopinion.blogspot.com/2009/01/eclipse-hitting-breakpoint-after-fact.html
+---
+
+Ever wonder how to hit a breakpoint after you've passed it?  You can do this with the Eclipse Java debugger.  Here's how I do it:<div><br /></div><div><ol><li>Stop at a breakpoint</li><li>Realize that you want to step through a method called a few lines back</li><li>Put a breakpoint in that method</li><li>Highlight an expression that uses the method in the java editor and from the context menu select <b>Inspect</b></li></ol><div><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://1.bp.blogspot.com/_vw9l2nnub6c/SYOITeTyHzI/AAAAAAAAACg/uU_0Jn3386k/s1600-h/Picture+2.png"><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 400px; height: 164px;" src="http://1.bp.blogspot.com/_vw9l2nnub6c/SYOITeTyHzI/AAAAAAAAACg/uU_0Jn3386k/s400/Picture+2.png" border="0" alt="" id="BLOGGER_PHOTO_ID_5297227454852767538" /></a></div><div>That should do it!  Before you see the value in the inspection pop-up, your debugger should hit the breakpoint that you just created.  Very cool.</div></div>

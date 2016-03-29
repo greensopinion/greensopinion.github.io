@@ -1,0 +1,13 @@
+---
+layout: imported-post
+title: NSLog Revisited
+date: '2009-11-13T09:10:00.000-08:00'
+author: David Green
+tags:
+- iPhone
+modified_time: '2009-11-13T09:27:14.686-08:00'
+blogger_id: tag:blogger.com,1999:blog-1482979278030787271.post-8516500984762439892
+blogger_orig_url: http://greensopinion.blogspot.com/2009/11/nslog-revisited.html
+---
+
+<p>Logging is an essential tool when developing for iPhone.  Keeping things simple and code readable is a major challenge when scattering logging code throughout your application.  A <a href="http://stackoverflow.com/questions/969130/nslog-tips-and-tricks">few</a> <a href="http://iphoneincubator.com/blog/debugging/the-evolution-of-a-replacement-for-nslog">recent</a> <a href="http://www.karlkraft.com/index.php/2009/03/23/114/">posts</a> on the topic have provided some great solutions, but if you're like me sometimes a dead-simple solution is exactly what you need.</p><p>This is what I use:</p><pre><code>// in Implementation.m<br />#define DLog NSLog<br /><br />...<br /><br />// I need to log something<br />DLog(@"something interesting happended: %@",what)<br /></code></pre><p>When I want to disable logging in that file, I simply change the #define as follows:</p><pre><code>#define DLog // NSLog<br /></code></pre><p>That's all!</p>

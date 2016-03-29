@@ -1,0 +1,12 @@
+---
+layout: imported-post
+title: Code coverage tools can be misleading
+date: '2008-05-15T10:54:00.000-07:00'
+author: David Green
+tags: 
+modified_time: '2008-05-15T11:15:04.546-07:00'
+blogger_id: tag:blogger.com,1999:blog-1482979278030787271.post-3622479679227973817
+blogger_orig_url: http://greensopinion.blogspot.com/2008/05/code-coverage-tools-can-be-misleading.html
+---
+
+Software development best-practices encourage a thorough automated test strategy and continuous integration (for me that's <a href="https://hudson.dev.java.net/">Hudson</a>, <a href="http://ant.apache.org/">Ant</a> and <a href="http://www.junit.org/">JUnit</a>).  Even better is to measure code coverage of your tests using a tool such as <a href="http://cobertura.sourceforge.net/">Cobertura</a>.  Code coverage tools will tell you which code was executed by your tests.  This kind of analysis is ideal for finding untested code, however it's easy to be mislead by code coverage reports.<div><br /></div><div>Take for example the following ficticious example:</div><div><br /><pre><code><br />public class Calculator {<br />BigDecimal currentValue = new BigDecimal(0);<br />Stack<operation> history = new Stack<operation>();<br /><br />public void add(BigDecimal augend) {<br /> currentValue = currentValue.add(augend);<br /> commandPerformed(Type.ADD,augend);<br />}<br /><br />private void commandPerformed(Type type, BigDecimal augend) {<br /> // TODO Auto-generated method stub<br /> System.out.println(type+": "+augend);<br />}<br /><br />public void undo() {<br /> // TODO<br />}<br /><br />public void redo() {<br /> // TODO<br />}<br />}<br /></operation></operation></code></pre><br /></div><div>Initially the coverage report will show that all of this class is not covered.</div><div>Create a test for the add() function, and the code coverage reports will show that the commandPerformed() has been covered -- even though it is clearly not doing what it is suppoed to.</div><div><br /></div><div>Be careful when reading code coverage reports -- don't assume that code that is covered is tested.  The most a coverage report can tell you is if code is not covered at all by your tests.</div>

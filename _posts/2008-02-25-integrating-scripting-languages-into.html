@@ -1,0 +1,22 @@
+---
+layout: imported-post
+title: Integrating scripting languages into your DSL using JSR-223
+date: '2008-02-25T10:52:00.000-08:00'
+author: David Green
+tags:
+- Java
+- groovy
+- MDD
+- MDE
+- ruby
+- scripting
+- JSR-223
+- python
+- beanshell
+- DSL
+modified_time: '2008-03-04T12:28:43.376-08:00'
+blogger_id: tag:blogger.com,1999:blog-1482979278030787271.post-991941400330798630
+blogger_orig_url: http://greensopinion.blogspot.com/2008/02/integrating-scripting-languages-into.html
+---
+
+I've been building tools for Model-Driven Engineering (sometimes known as Model-Driven Development) now for about 11 years, but this is the first time that I've integrated scripting capabilities into a DSL using Java.  The opportunity came up when creating a DSL for modernizing legacy data for my company <a href="http://www.maketechnologies.com/">MAKE Technologies Inc</a>.  Following is a summary of how this was done.<div><br /></div><div>The idea is that the functional capabilities of the DSL can be extended by scripting the behaviour in the DSL itself.  By integrating with JSR-223 APIs we can support as many scripting languages as are JSR-223 compliant.  By the looks of <a href="https://scripting.dev.java.net/">scripting.dev.java.net</a>, there are many including Java itself, Groovy, JRuby, Python, BeanShell, ECMAScript (JavaScript) and PNuts.</div><div><br /></div><div>The DSL defines the concept of a 'caster', which can cast an arbitrary string value to some other value.  For example, a trivial boolean caster might consist of a function that can cast a 'Y' or 'N' value to a boolean true or false.  So we define it as follows:</div><div><pre><code><br />&lt;caster language="groovy" name="YesNoToBooleanCaster"><br />String cast(text) {<br />   if (text == 'Yes') {<br />       return true<br />   } else if (text == 'No') {<br />       return false<br />   } else {<br />       throw new Exception("Unexpected value '$text'");<br />   }<br />}<br />&lt;/caster><br /></code></pre></div><div>Elsewhere in the DSL we can refer to the new caster by it's name <span class="Apple-style-span"  style="font-family:'courier new';">YesNoToBooleanCaster</span>.</div><div><br /></div>The code to make the new caster work is relatively simple using the <span class="Apple-style-span"  style="font-family:'courier new';">javax.script</span> APIs:<div><br /></div><div><br /><pre><code><br />String languageName = "groovy"; // get the language from the DSL instance<br />String script = ""; // get the script from the DSL instance<br /><br />ScriptEngine scriptEngine = new ScriptEngineManager().getEngineByName(languageName);<br />Invocable invocable = (Invocable) scriptEngine.eval(script);<br /><br />Object value = invocable.invokeFunction("cast", "Yes"); // test it out<br />assert Boolean.TRUE.equals(value);<br /></code></pre>With a little more work, I was able to hook up auto-suggest for the language attribute in the DSL editor (ScriptEngineManager can tell you which languages are supported) and provide validation of the scripting (ScriptEngine.eval can be used to detect script syntax errors).</div><div><br /></div><div>All of this and the script runs very quickly at runtime, thanks to bytecode compilation by most supported scripting languages!</div><div><br /></div><div>The only real issues that I encountered were:<br /></div><div><ul><li>extracting useful error messages from exceptions thrown by ScriptEngine.eval can be tricky.  For example, JRuby provides the information in a <span class="Apple-style-span"  style="font-family:'courier new';">getException()</span> method on the Exception object.  Some reflection and chained exception unraveling was used to overcome this problem in a language-independent manner.</li><li>Older Java 6 VMs (developer preview versions) have old preview versions of the JSR-223 APIs... stick to a non-beta version of the Java 6 VM if you can, or if you're developing for Macs then you may have to catch <span class="Apple-style-span"  style="font-family:'courier new';">NoSuchMethodError</span> and use some reflection magic.</li></ul></div><div><br /></div><div><br /></div><div>All in all I was very impressed with the ease of using JSR-223.  The end result when used with DSLs is that it is very easy to provide an extensible DSL API with a very low barrier to entry.</div>
