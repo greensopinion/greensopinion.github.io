@@ -11,6 +11,12 @@ permalink: /blog/
 {{ post.content }}
 </article>
 
+<p>If you liked this post, you can
+<a href="https://twitter.com/intent/tweet?url={{ site.url | url_encode }}{{ post.url | url_encode }}&text={{ post.title | url_encode }}&via={{ site.twitter_username }}"
+   target="_blank">
+  share it with your followers</a>.
+</p>
+
 <div id="disqus_thread"></div>
 <script>
 var disqus_config = function () {
