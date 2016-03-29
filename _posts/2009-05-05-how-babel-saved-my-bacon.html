@@ -1,5 +1,5 @@
 ---
-layout: imported-post
+layout: post
 title: How Babel Saved My Bacon
 date: '2009-05-05T22:30:00.000-07:00'
 author: David Green
@@ -7,7 +7,7 @@ tags:
 - Eclipse
 modified_time: '2009-05-05T22:47:04.283-07:00'
 blogger_id: tag:blogger.com,1999:blog-1482979278030787271.post-6649441147265442296
-blogger_orig_url: http://greensopinion.blogspot.com/2009/05/how-babel-saved-my-bacon.html
+original_url: http://greensopinion.blogspot.com/2009/05/how-babel-saved-my-bacon.html
 ---
 
 <p>Recently I blogged about <a href="http://greensopinion.blogspot.com/2009/04/galileo-icu4j-requirement-is-painful.html">the pain of moving to ICU4J</a>, lamenting the fact that using NLS instead of ResourceBundle would require me to change the keys in my resource bundles.  After much consideration and <a href="https://www.blogger.com/comment.g?blogID=1482979278030787271&postID=5052361975001061519">the advice of knowledgeable people</a>, I decided that moving to NLS was the way to go.  After changing resource bundle keys across the board, I expected that translations to other languages would need their corresponding keys changed as well.  Not so.  Apparently <a href="http://babel.eclipse.org/babel/">Babel</a> can magically handle such refactorings, with the help of a mystery user named 'Babel Syncup'.  I wonder what else it can do.</p><p>The <a href="http://babel.eclipse.org/babel/">Eclipse Babel</a> project is truly impressive.  Kudos to the <a href="http://www.eclipse.org/babel/development/">Babel team</a> for thinking ahead.</p>

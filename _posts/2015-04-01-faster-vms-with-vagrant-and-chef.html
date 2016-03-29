@@ -1,0 +1,41 @@
+---
+layout: post
+title: Faster VMs with Vagrant and Chef
+date: '2015-04-01T14:04:00.000-08:00'
+author: David Green
+tags:
+modified_time: '2015-04-01T14:04:00.000-08:00'
+original_url: http://www.tasktop.com/content/blog-entry/faster-vms-vagrant-and-chef
+---
+
+<p>Developing and testing changes in an environment that is the same as the deployment environment is one of the magic ingredients of the DevOps way. For engineers at Tasktop working on the <a href="https://blog.tasktop.com/greens-opinion/testing-for-the-api-economy">Integration Factory</a>, provisioning a new VM can occur multiple times in a day, so any inefficiencies in the process are painful. I recently stumbled across <a href="https://github.com/fgrehm/vagrant-cachier">vagrant-cachier</a> which reduces network usage and speeds up local Vagrant-based provisioning, drastically improving VM provisioning times.</p><p>Install vagrant-cachier as follows:</p><pre style="font-family: monospace;">$ vagrant plugin install vagrant-cachier
+</pre><p>Then add the following to your <tt style="font-family: monospace;">~/.vagrant.d/Vagrantfile</tt></p><pre style="font-family: monospace;">Vagrant.configure("2") do |config|
+  if Vagrant.has_plugin?("vagrant-cachier")
+    config.cache.scope = :box
+  end
+end
+</pre><p>That’s all! The next time you provision a VM using Vagrant, you should see a local cache being created under <tt style="font-family: monospace;">~/.vagrant.d/cache</tt></p>
+<p>
+  <img alt="" class="media-image" typeof="foaf:Image" src="/images/vagrant-cachier-cache.png" height="112" width="480">
+</p>
+<p>As you can see, vagrant-cachier creates a local cache of dependencies including those provided by apt-get, chef, and of course anything under <tt style="font-family: monospace;">/var/cache</tt>.<br />This technique is especially helpful for remote developers who are not on 100GB Ethernet to servers hosting VM dependencies.</p><p>It’s easy to try it yourself and collect before/after results. Here’s what I observed before vagrant-cachier:</p><pre style="font-family: monospace;">$ time vagrant up
+Bringing machine 'default' up with 'virtualbox' provider...
+[default] Importing base box 'ubuntu-14.04-x86'...
+[default] Matching MAC address for NAT networking...
+[default] Setting the name of the VM...
+...
+real4m44.142s
+user0m4.895s
+sys0m3.132s
+$
+</pre><p>After enabling vagrant-cachier:</p><pre style="font-family: monospace;">$ time vagrant up
+Bringing machine 'default' up with 'virtualbox' provider...
+[default] Importing base box 'ubuntu-14.04-x86'...
+[default] Matching MAC address for NAT networking...
+[default] Setting the name of the VM...
+...
+real3m18.506s
+user0m7.617s
+sys0m5.261s
+$
+</pre><p>In this real-world example of a simple VM running MySQL downloading dependencies over a VPN, I was able to reduce the provisioning time by 30%! The effect in real time is larger of course for VMs that have more dependencies.</p><p>Many thanks to <a href="https://twitter.com/fgrehm">@fgrehm</a> for vagrant-cachier, which helps to eliminate much of the pain of waiting for VMs to come up when using Vagrant and Chef.<br />Find out more at <a href="http://fgrehm.viewdocs.io/vagrant-cachier">http://fgrehm.viewdocs.io/vagrant-cachier</a>.</p>

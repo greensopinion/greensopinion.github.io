@@ -1,5 +1,5 @@
 ---
-layout: imported-post
+layout: post
 title: Mylyn Converts Wiki-Based User Guide To Eclipse Help
 date: '2008-11-18T12:39:00.000-08:00'
 author: David Green
@@ -11,7 +11,7 @@ tags:
 - Ant
 modified_time: '2008-11-18T13:24:35.387-08:00'
 blogger_id: tag:blogger.com,1999:blog-1482979278030787271.post-5798462602804238024
-blogger_orig_url: http://greensopinion.blogspot.com/2008/11/mylyn-converts-wiki-based-user-guide-to.html
+original_url: http://greensopinion.blogspot.com/2008/11/mylyn-converts-wiki-based-user-guide-to.html
 ---
 
 The <a href="http://wiki.eclipse.org/Mylyn/User_Guide">Mylyn user guide</a> is maintained online in the Eclipse wiki.  While this has the many benefits of using a collaborative wiki for help content, this has meant that the Mylyn user guide is <i>only</i> available online on the wiki, not from within the Eclipse help system.  Until now.  Using <a href="http://wiki.eclipse.org/Mylyn/Incubator/WikiText">WikiText Ant tasks</a> Mylyn is able to convert the online wiki content into Eclipse help using an automated process.  Users of Mylyn now have access to the user guide by using the standard Eclipse help system, including search, table of contents, etc. even when offline.<div><div><br /></div><div>Going forward this means that the Mylyn project will be able to continue maintaining the user guide in the Eclipse wiki while also providing the same content from within the Eclipse.  Furthermore, other Eclipse projects will be able to do the same by adopting the same approach.</div><div><br /></div><div>Users wishing to see the user guide in Eclipse can do so by installing the Mylyn weekly build <a href="http://www.eclipse.org/mylyn/downloads/">as described here</a>.  Eclipse committers that would like to have their wiki-based content available within Eclipse can do so by looking at the Mylyn project (<tt>org.eclipse.mylyn.help.ui/build-helper.xml</tt>) and by making use of the <a href="http://www.eclipse.org/mylyn/downloads/">WikiText stand-alone package</a>.</div></div>

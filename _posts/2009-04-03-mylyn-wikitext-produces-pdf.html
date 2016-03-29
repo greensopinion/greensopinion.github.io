@@ -1,5 +1,5 @@
 ---
-layout: imported-post
+layout: post
 title: Mylyn WikiText produces PDF
 date: '2009-04-03T22:42:00.000-07:00'
 author: David Green
@@ -12,7 +12,7 @@ tags:
 - Ant
 modified_time: '2009-04-03T23:01:44.471-07:00'
 blogger_id: tag:blogger.com,1999:blog-1482979278030787271.post-3789216568958021664
-blogger_orig_url: http://greensopinion.blogspot.com/2009/04/mylyn-wikitext-produces-pdf.html
+original_url: http://greensopinion.blogspot.com/2009/04/mylyn-wikitext-produces-pdf.html
 ---
 
 <p><a href="http://www.eclipse.org/mylyn">Mylyn WikiText</a> becomes increasingly flexible with its latest addition of <a href="http://en.wikipedia.org/wiki/XSL_Formatting_Objects">XSL-FO</a> to the list of output formats supported by its wiki markup conversion capability.  Combined with the excellent <a href="http://xmlgraphics.apache.org/fop/">Apache FOP</a> project, it becomes easy to produce PDF from your wiki markup.</p><pre><code><br /> &lt;-- create XSL-FO --&gt;<br /> &lt;wikitext-to-xslfo markupLanguage="Textile" file="My File.mediawiki"/&gt;<br /><br /> &lt;-- create PDF --&gt;<br /> &lt;exec command="${fop.home}/fop"&gt;<br />  &lt;arg value="${basedir}/help/My File.fo"/&gt;<br />  &lt;arg value="${basedir}/help/My File.pdf"/&gt;<br /> &lt;/exec&gt;<br /></code></pre><p>From a single source you can now produce HTML, Eclipse Help, DocBook, DITA and now XSL-FO and PDF.  Wiki markup never looked so good!</p><p>If you're interested in trying out this new functionality you'll have to wait until the next weekly release is posted on the <a href="http://www.eclipse.org/mylyn/downloads">Mylyn downloads page</a>.</p>
