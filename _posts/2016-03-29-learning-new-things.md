@@ -8,7 +8,7 @@ modified_time: '2016-03-29T17:18:00.000-08:00'
 original_url: http://www.tasktop.com/content/blog-entry/learning-new-things
 comments: true
 ---
-It's mid-2015. Our product and platform had evolved from a pure Java application to a mixed-technology web-based solution, and I found myself realizing that I was not pulling my weight. I'd built many web applications before. But this sense of letting the team down was coming from the company's need to move ahead with a faster, better, more modern product development approach using technologies that were somewhat new to me: npm, Bower, AngularJS, Grunt, Karma, Jasmine... there was a good-sized list of them.
+It's mid-2015. Our product and platform had evolved from a pure Java application to a mixed-technology web-based solution, and I found myself realizing that I had to up my game. I'd built many web applications before. But my drive to hone my skills was coming from the company's need to move ahead with a faster, better, more modern product development approach using technologies that were somewhat new to me: npm, Bower, AngularJS, Grunt, Karma, Jasmine... there was a good-sized list of them.
 
 As a software engineer I've always believed that it's my responsibility to contribute powerfully to the team's delivery. By that I mean that I should be able to tackle any problem with confidence, knowing that the solution would flow from my keyboard as fast as I could think it up. That was definitely not happening with this web stack, so it was time to do something about it. I'm a big fan of learning by doing, so I decided to take it on by creating a small application to exercise my weaknesses using the very technology stack that made me uncomfortable.
 
