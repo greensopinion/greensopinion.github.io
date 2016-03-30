@@ -11,7 +11,7 @@ Welcome to Green's Opinion, where you can find out more about [David Green](abou
         <h3><a href="https://github.com/greensopinion/greenbeans">Green Beans</a></h3>
         <p>A personal finance app, designed for simplicity and security.</p>
       </div>
-      <img src="images/greenbeans-report.png" class="img-rounded" width="400px" alt="GreenBeans chart, monthly expenses by category"/>
+      <img src="images/blog/greenbeans-report.png" class="img-rounded" width="400px" alt="GreenBeans chart, monthly expenses by category"/>
       <div class="caption">
         <ul>
           <li>Strong encryption and local data only - no need to <a href="http://www.informationisbeautiful.net/visualizations/worlds-biggest-data-breaches-hacks/">trust the cloud</a> with your information.</li>
