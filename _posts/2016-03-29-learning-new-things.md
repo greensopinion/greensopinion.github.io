@@ -5,7 +5,7 @@ date: '2016-03-29T17:18:00.000-08:00'
 author: David Green
 tags:
 modified_time: '2016-03-29T17:18:00.000-08:00'
-original_url: http://www.tasktop.com/content/blog-entry/learning-new-things
+original_url: https://www.tasktop.com/blog/learning-new-things/
 comments: true
 ---
 It's mid-2015. Our product and platform had evolved from a pure Java application to a mixed-technology web-based solution, and I found myself realizing that I had to up my game. I'd built many web applications before. But my drive to hone my skills was coming from the company's need to move ahead with a faster, better, more modern product development approach using technologies that were somewhat new to me: npm, Bower, AngularJS, Grunt, Karma, Jasmine... there was a good-sized list of them.
