@@ -91,3 +91,21 @@ i.icon {
   font-size: 16px;
   width: 16px;
 }
+
+.img-bordered {
+  box-shadow: 0px 1px 2px rgba(0,0,0,.2);
+}
+
+div.project-image {
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 6px;
+    width: 120px;
+  }
+  .code-icon {
+    color: rgba(0,0,0,0.68);
+    margin-top: -10px;
+  }
+}
