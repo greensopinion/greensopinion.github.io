@@ -22,6 +22,9 @@ Welcome to Green's Opinion, where you can find out more about [David Green](abou
     <h3><a href="https://wiki.eclipse.org/Mylyn/WikiText">WikiText</a></h3>
     <div class="project-image"><i class="fa fa-code fa-5x code-icon"></i></div>
     <p>A software library and tools for for transforming and rendering wiki markup, rich text and HTML.</p>
+    <p>
+    See <a href="https://wiki.eclipse.org/Mylyn/WikiText">WikiText at eclipse.org</a>
+    </p>
   </div>
   <div class="col-sm-4 col-md-4">
     <h3><a href="/blog">Blog</a></h3>
