@@ -31,8 +31,8 @@ Welcome to Green's Opinion, where you can find out more about [David Green](abou
 
 <div class="row">
   <div class="col-sm-4 col-md-4">
-    <h3><a href="https://github.com/dgreen99/swagger-jaxrs-maven">Swagger Generator</a></h3>
+    <h3><a href="https://github.com/greensopinion/swagger-jaxrs-maven">Swagger Generator</a></h3>
     <p>Provides a Maven plug-in that can generate <a href="http://swagger.io">Swagger</a> documentation for JAX-RS web services.</p>
-    <p>See <a href="https://github.com/dgreen99/swagger-jaxrs-maven">swagger-jaxrs-maven on GitHub</a></p>
+    <p>See <a href="https://github.com/greensopinion/swagger-jaxrs-maven">swagger-jaxrs-maven on GitHub</a></p>
   </div>
 </div>
