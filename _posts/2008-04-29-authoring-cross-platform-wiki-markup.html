@@ -3,10 +3,11 @@ layout: post
 title: Authoring Cross-Platform Wiki Markup
 date: '2008-04-29T07:50:00.000-07:00'
 author: David Green
-tags: 
+tags:
 modified_time: '2009-03-16T21:55:16.111-07:00'
 blogger_id: tag:blogger.com,1999:blog-1482979278030787271.post-2571577870787060654
 original_url: http://greensopinion.blogspot.com/2008/04/authoring-cross-platform-wiki-markup.html
+comments: true
 ---
 
 <p>I'll never think of line delimiters the same way again.  Mac uses \r, Unix uses \n, and Windows uses \r\n.  Who cares?  Well, when it comes to writing platform-independent Wiki markup, it matters.</p> <p><br /></p> <p>Take for example a document that was written on a Unix platform.  Every line is separated by a single \n character.  For Wiki markup, paragraphs are separated by an empty line, which is represented in the document as two consecutive newlines \n\n.  When a Wiki markup parser converts this document to HTML, it looks for the empty newline (the second \n) and uses that to close the previous paragraph and start a new one.</p> <p><br /></p> <p>Now what happens if the document is opened and edited on a Mac?  Mac uses \r as a newline.  Suppose the Mac user adds a new empty line just before an existing one in this same document.  For example:</p> <p><br /></p> <p>Prior to editing:</p><br /><pre><code>some text\nmore text</code></pre> <p><br /></p> <p>After editing:</p> <pre><code>some text\r\nmore text</code></pre> <p><br /></p> <p>Prior to adding the newline, the document contains a single \n character, and afterwards the document contains \r\n.  In the users editor (on a Mac) the \r\n will appear visually as two lines, however \r\n happens to be a Windows line delimiter and thus will be parsed by Windows-accomodating Wiki markup parsers as a single line delimiter.  In many documents this may not matter, however in Wiki markup this can make a big difference.</p> <p><br /></p> <p>Editors that support editing Wiki markup on multiple platforms must be coded carefully to avoid this issue.  For <a href="https://textile-j.dev.java.net/">Textile-J</a> this means that the end-of-line markers are converted to the platform default when the editor first opens a file.</p> <p><br /></p> <p>Who knew that line delimiters could be so important.</p>
