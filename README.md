@@ -1,10 +1,8 @@
-# greensopinion.github.io
+# greensopinion.com
+
 Green's Opinion site
 
 # Sources
-
-Sources on branch gh-pages
-=======
 
 [Green's Opinion](https://greensopinion.github.io) site
 
