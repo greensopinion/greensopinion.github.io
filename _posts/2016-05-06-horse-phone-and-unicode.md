@@ -6,7 +6,7 @@ author: David Green
 tags:
   - Testing
   - Unicode
-modified_time: '2016-05-06T12:00:00.000-08:00'
+modified_time: '2016-05-06T12:00:00.000-08:01'
 original_url: https://www.tasktop.com/blog/telephone-horse-and-unicode-at-tasktop/
 comments: true
 ---
