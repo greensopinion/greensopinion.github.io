@@ -2,7 +2,11 @@
 layout: default
 ---
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-
+  {% if page.feature_image %}
+  <div class="feature-image">
+    <img class="feature-image" src="{{ page.feature_image }}"/>
+  </div>
+  {% endif %}
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
     <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}{% if page.original_url %} • originally published at <a href="{{ page.original_url }}">{{ page.original_url | remove_first:'http://'| remove_first:'https://' | split:'/' | first | remove_first:'www.' }}</a>{% endif %}</p>
