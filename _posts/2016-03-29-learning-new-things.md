@@ -5,6 +5,7 @@ date: '2016-03-29T17:18:00.000-08:00'
 author: David Green
 tags:
 modified_time: '2016-03-29T17:18:00.000-08:00'
+feature_image: /images/blog/2016-03/learning-new-things.png
 original_url: https://www.tasktop.com/blog/learning-new-things/
 comments: true
 ---
