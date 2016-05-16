@@ -74,4 +74,4 @@ Or, if using the AndroidStudio-generated `gradlew`:
 
     $ ../gradlew eclipse
 
-Within a couple of minutes I had the Java imports organized and compiler warnings gone, was refactoring in anger and was writing unit tests with one of my favourite Eclipse plug-ins, [MoreUnit](https://marketplace.eclipse.org/content/moreunit).
+Within a couple of minutes I had the Java imports organized and compiler warnings gone, was refactoring in anger and writing unit tests with one of my favourite Eclipse plug-ins, [MoreUnit](https://marketplace.eclipse.org/content/moreunit).
