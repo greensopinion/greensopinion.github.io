@@ -5,7 +5,8 @@ date: '2016-05-25T12:00:00.000-08:00'
 author: David Green
 tags:
   - Android
-  - Eclipse
+  - Analytics
+  - Firebase
 modified_time: '2016-05-25T12:00:00.000-08:01'
 comments: true
 ---
@@ -39,7 +40,7 @@ The first step is to [create a Firebase account](https://firebase.google.com/). 
 
 Next was adding Firebase dependencies to the build.  [The instructions](https://firebase.google.com/docs/android/setup#add_the_sdk) are great, it took all of 2 minutes.  The only hiccup is that I had to update an existing project dependency `com.google.android.gms:play-services-maps` to the 9.0.0 version to get the build to work.
 
-#### 3. Add Analytis To The App
+#### 3. Add Analytics To The App
 
 Finally adding analytics to the app was trivial.  A key step for me is that this feature has to be opt-in.  In other words, the user has to agree to providing stats, otherwise it just doesn't feel right.  To make it easy to manage the opt-in setting I wrapped the Firebase APIs in a small class called `Analytics` as follows:
 
