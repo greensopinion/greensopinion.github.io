@@ -78,7 +78,7 @@ To overcome the difficulty of type compatibility and `JSObject` called out above
 
 ## Build System
 
-A major problem for any project is the build system.  Maven, Ant, Gradle - whatever you choose, we still need something to build the webby front-end.  For this application I chose Grunt with Node, Karma, Jasmine... it's all there.  Ultimately this is the same as any web application using more than one implementation language, there are two build technologies involved, which complicates things significantly.
+A major problem for any project is the build system.  Maven, Ant, Gradle - whatever you choose, we still need something to build the webby front-end.  For this application I chose Grunt with Node, Karma, Jasmine... it's all there.  Ultimately this is the same as any web application using more than one implementation language, there are two build technologies involved, which complicates things significantly.  
 
 ## Testing Strengths
 
@@ -96,6 +96,10 @@ The only real problem here is that our UI tests will be running using a web brow
 ## Migration to Web
 
 If future application deployment as a real web application rather than a desktop application is a consideration, then this approach could be a great way to move forward.  The application architecture being a traditional web stack lends itself very well to a web deployment.
+
+## Working Example
+
+A working example of such an application is [published on GitHub](https://github.com/greensopinion/greenbeans).  I'd love to hear your feedback and thoughts on the application and the approach.
 
 # Summary
 
