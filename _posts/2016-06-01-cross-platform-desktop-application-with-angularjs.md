@@ -8,7 +8,7 @@ tags:
   - Java
   - WebView
   - JavaFX
-modified_time: '2016-06-01T12:00:01.000-08:00'
+modified_time: '2016-06-02T12:00:01.000-08:00'
 comments: true
 ---
 Building cross-platform desktop applications usually means compromising on user experience, ease of development or both.
@@ -107,4 +107,4 @@ Building a desktop application using a JavaFX WebView with an embedded AngularJS
 
 Many, but not all of the development difficulties introduced by running a web application in a JavaFX WebView instead of a standard web browser can be mitigated by supporting a normal web development flow as outlined above.
 
-For me this was [a great learning experience](/2016/03/30/learning-new-things.html) and potentially worthy of further exploration.  Would I use this as a product development approach for a real application?  Maybe, if the trade-offs were to weigh in favour for the needs of the organization and application under consideration.  But I would proceed with caution, conscious of the tradeoffs and always looking for opportunities to improve.
+For me this was [a great learning experience](/2016/03/30/learning-new-things.html) and potentially worthy of further exploration.  Would I use this as a product development approach for a real application?  Maybe, if the trade-offs were to weigh in favour for the needs of the organization and application under consideration.  But I'm not completely sold on it - so would keep my eye open for signs of an unhealthy development process and architecture.
