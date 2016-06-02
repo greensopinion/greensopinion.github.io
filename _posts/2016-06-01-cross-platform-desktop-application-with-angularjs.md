@@ -8,7 +8,7 @@ tags:
   - Java
   - WebView
   - JavaFX
-modified_time: '2016-06-01T12:00:00.000-08:00'
+modified_time: '2016-06-01T12:00:01.000-08:00'
 comments: true
 ---
 Building cross-platform desktop applications usually means compromising on user experience, ease of development or both.
