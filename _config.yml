@@ -8,7 +8,7 @@
 # Site settings
 title: Green's Opinion
 email: dgreen99@gmail.com
-description: Green's Opinion provides insight and opinions on software, open source, and the world.
+description: Green's Opinion provides insight and opinions on software and open source.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://greensopinion.com" # the base hostname & protocol for your site
 twitter_username: dgreen
