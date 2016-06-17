@@ -8,5 +8,20 @@
 
 .site-title, .site-title:visited {
   font-weight: 400;
-  color: #111;
+  color: white;
+}
+
+.brand-banner {
+  width: 100%;
+  background-color: #FF5722;
+  background-image: url("/images/epicrideweather/banner-bg.png");
+  background-size: 100% 100%;
+}
+
+.slogan {
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+.slogan2 {
+  margin-top: 30px;
 }
