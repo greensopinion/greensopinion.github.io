@@ -6,6 +6,18 @@ Welcome to Green's Opinion!  Below you'll see some of my open source projects an
 
 <div class="row">
   <div class="col-sm-4 col-md-4">
+    <h3><a href="/epic-ride-weather/">Epic Ride Weather</a></h3>
+    <div class="project-image">
+      <img src="images/epicrideweather/logo.png" class="img-bordered" alt="Epic Ride Weather app"/>
+    </div>
+    <p>
+      A unique approach to weather forecasts, for your ride, with your route, at your pace.
+    </p>
+    <p>
+    See <a href="/epic-ride-weather/">Epic Ride Weather</a>.
+    </p>
+  </div>
+  <div class="col-sm-4 col-md-4">
     <h3><a href="https://github.com/greensopinion/greenbeans">Green Beans</a></h3>
     <div class="project-image">
       <img src="images/blog/greenbeans-report.png" class="img-rounded img-bordered" alt="GreenBeans app"/>
@@ -18,6 +30,13 @@ Welcome to Green's Opinion!  Below you'll see some of my open source projects an
     </p>
   </div>
   <div class="col-sm-4 col-md-4">
+    <h3><a href="/blog">Blog</a></h3>
+    {% include recent_posts.html %}
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-4 col-md-4">
     <h3><a href="https://wiki.eclipse.org/Mylyn/WikiText">WikiText</a></h3>
     <div class="project-image"><i class="fa fa-code fa-5x code-icon"></i></div>
     <p>A software library and tools for for transforming and rendering wiki markup, rich text and HTML.</p>
@@ -25,13 +44,6 @@ Welcome to Green's Opinion!  Below you'll see some of my open source projects an
     See <a href="https://wiki.eclipse.org/Mylyn/WikiText">WikiText at eclipse.org</a>
     </p>
   </div>
-  <div class="col-sm-4 col-md-4">
-    <h3><a href="/blog">Blog</a></h3>
-    {% include recent_posts.html %}
-  </div>
-</div>
-
-<div class="row">
   <div class="col-sm-4 col-md-4">
     <h3><a href="https://github.com/greensopinion/swagger-jaxrs-maven">Swagger Generator</a></h3>
     <p>Provides a Maven plug-in that can generate <a href="http://swagger.io">Swagger</a> documentation for JAX-RS web services.</p>
