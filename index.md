@@ -14,7 +14,7 @@ Welcome to Green's Opinion!  Below you'll see some of my open source projects an
       A unique approach to weather forecasts, for your ride, with your route, at your pace.
     </p>
     <p>
-    See <a href="/epic-ride-weather/">Epic Ride Weather</a>.
+    Check out <a href="/epic-ride-weather/">Epic Ride Weather</a>.
     </p>
   </div>
   <div class="col-sm-4 col-md-4">
