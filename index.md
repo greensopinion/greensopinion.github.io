@@ -8,7 +8,7 @@ Welcome to Green's Opinion!  Below you'll see some of my open source projects an
   <div class="col-sm-4 col-md-4">
     <h3><a href="/epic-ride-weather/">Epic Ride Weather</a></h3>
     <div class="project-image">
-      <img src="images/epicrideweather/logo.png" class="img-bordered" alt="Epic Ride Weather app"/>
+      <a href="/epic-ride-weather/"><img src="images/epicrideweather/logo.png" class="img-bordered" alt="Epic Ride Weather app"/></a>
     </div>
     <p>
       A unique approach to weather forecasts, for your ride, with your route, at your pace.
