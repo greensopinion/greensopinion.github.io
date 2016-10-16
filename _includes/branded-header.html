@@ -2,7 +2,13 @@
 
   <div class="wrapper">
 
-    <h1><a class="site-title" href="{{ site.baseurl | append: page.permalink }}">{{page.title}}</a></h1>
+    <h1>
+{% if page.headerlink %}
+      <a class="site-title" href="{{ site.baseurl | append: page.headerlink }}">{{page.title}}</a>
+{% else %}
+      <a class="site-title" href="{{ site.baseurl | append: page.permalink }}">{{page.title}}</a>
+{% endif %}
+    </h1>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
