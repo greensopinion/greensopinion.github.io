@@ -15,11 +15,13 @@ Epic Ride Weather provides a unique approach to weather forecasting for cyclists
 The magic in using Epic Ride Weather is the use of GPS data and timing information from your previous ride.  Based on this and a ride start time, we can produce forecasts for every 10 minutes of ride time at the precise location that you'll be.  
 
 Epic Ride Weather has really improved my cycling life.  I'm able to answer questions such as:
+
 * Should I start early to avoid the heat of the day?  
 * On that early leave, will I need arm warmers?  
 * Are two water bottles enough, or will I need more?  
 * Should I be prepared for heavy winds on the back leg of the ride?
 * Will I be able to miss the rain if I take this or the other route?
+
 Overall I'm getting out more often, I'm hitting the best weather for my area, and I'm more prepared.  This translates to a more enjoyable ride every time.
 
 Epic Ride Weather uses the [Dark Sky API](http://darksky.net), which provides some of the best forecasts available.
