@@ -1,0 +1,28 @@
+---
+layout: branded
+---
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  {% if page.feature_image %}
+  <div class="feature-image">
+    <img class="feature-image img-rounded" src="{{ page.feature_image }}"/>
+  </div>
+  {% endif %}
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}{% if page.original_url %} • originally published at <a href="{{ page.original_url }}">{{ page.original_url | remove_first:'http://'| remove_first:'https://' | split:'/' | first | remove_first:'www.' }}</a>{% endif %}</p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+</article>
+{% include twitter_plug.html %}
+{% include comments.html %}
+<h3 id="recent-posts">Recent Posts</h3>
+<ul>
+{% for post in site.posts_erw limit:4 %}
+  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+  <li><a href="{{ "/epic-ride-weather/archive" | prepend: site.baseurl }}">Article Index</a></li>
+</ul>
+<p class="rss-subscribe">subscribe <a href="{{ "/epic-ride-weather/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>

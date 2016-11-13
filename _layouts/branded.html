@@ -8,7 +8,9 @@
     {% include branded-header.html %}
 
     <div class="page-content">
+      {% if page.includewrapper %}<div class="wrapper">{% endif %}
         {{ content }}
+      {% if page.includewrapper %}</div>{% endif %}
     </div>
 
     {% include footer.html %}

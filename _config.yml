@@ -15,6 +15,27 @@ twitter_username: dgreen
 github_username:  greensopinion
 disqusid: greensopinion
 
+collections:
+  - posts_erw
+
+collections:
+  posts_erw:
+    output: true
+    permalink: /epic-ride-weather/post/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts_erw
+    values:
+      layout: post_erw
+      brand: epicrideweather
+      headerlink: /epic-ride-weather/
+      headertitle: Epic Ride Weather
+      includewrapper: true
+      comments: false
+      author: David Green
+
 # Build settings
 markdown: kramdown
 

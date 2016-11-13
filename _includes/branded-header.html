@@ -4,7 +4,12 @@
 
     <h1>
 {% if page.headerlink %}
-      <a class="site-title" href="{{ site.baseurl | append: page.headerlink }}">{{page.title}}</a>
+      <a class="site-title" href="{{ site.baseurl | append: page.headerlink }}">
+        {% if page.headertitle %}
+          {{page.headertitle}}
+        {% else %}
+          {{page.title}}
+        {% endif %}</a>
 {% else %}
       <a class="site-title" href="{{ site.baseurl | append: page.permalink }}">{{page.title}}</a>
 {% endif %}
