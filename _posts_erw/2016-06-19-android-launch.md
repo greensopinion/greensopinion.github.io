@@ -1,7 +1,7 @@
 ---
 title: Epic Ride Weather Launched for Android
-date: '2016-07-01T12:00:00.000-08:00'
-modified_time: '2016-07-01T12:00:00.000-08:00'
+date: '2016-06-19T12:00:00.000-08:00'
+modified_time: '2016-06-19T12:00:00.000-08:00'
 tags:
   - Android
 ---
