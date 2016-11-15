@@ -20,7 +20,8 @@ layout: branded
 {% include comments.html %}
 <h3 id="recent-posts">Recent Posts</h3>
 <ul>
-{% for post in site.posts_erw limit:4 %}
+{% assign sortedPosts = (site.posts_erw | sort: 'date') | reverse %}
+{% for post in sortedPosts limit:4 %}
   <li><a href="{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
   <li><a href="{{ "/epic-ride-weather/archive" | prepend: site.baseurl }}">Article Index</a></li>
