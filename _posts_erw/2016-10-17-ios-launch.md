@@ -6,7 +6,7 @@ tags:
   - iOS
 ---
 
-The [Epic Ride Weather](/epic-ride-weather/) app, previously only available for Android, was released today for iOS devices such as iPhone and iPad.
+The [Epic Ride Weather](/epic-ride-weather/) app, previously only [available for Android](/epic-ride-weather/post/2016-06-19-android-launch/), was released today for iOS devices such as iPhone and iPad.
 
 Epic Ride Weather provides precise weather forecasts for every 10 minutes of ride time based on a route that you provide from Strava, Runkeeper or GPX file.  With timing information and GPS coordinates, a projection of weather over the duration of your ride is visually presented within the app:
 
