@@ -25,6 +25,12 @@
 .top-buffer {
   margin-top: 30px;
 }
+.bottom-buffer {
+  margin-bottom: 30px;
+}
+.bottom-buffer-sm {
+  margin-bottom: 20px;
+}
 
 .attribution {
   font-size: smaller;
