@@ -1,4 +1,3 @@
-
 .site-header.epicrideweather {
   background-color: #FF5722;
 }
@@ -35,4 +34,13 @@
 .attribution {
   font-size: smaller;
   color: #828282;
+}
+
+ul.front-page-links {
+  list-style: none;
+  font-size: 14px;
+  margin-left: 0px;
+}
+.front-page-links li {
+  margin-top: 10px;
 }
