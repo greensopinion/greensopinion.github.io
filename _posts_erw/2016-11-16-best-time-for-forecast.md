@@ -1,5 +1,5 @@
 ---
-title: Tips for the Most Accurate Forecats
+title: Tips for the Most Accurate Forecasts
 date: '2016-11-16T12:00:00.000-08:00'
 modified_time: '2016-11-16T12:00:00.000-08:00'
 ---
