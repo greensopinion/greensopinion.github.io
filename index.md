@@ -6,15 +6,15 @@ Welcome to Green's Opinion!  Below you'll see some of my open source projects an
 
 <div class="row">
   <div class="col-sm-4 col-md-4">
-    <h3><a href="/epic-ride-weather/">Epic Ride Weather</a></h3>
+    <h3><a href="http://www.epicrideweather.com">Epic Ride Weather</a></h3>
     <div class="project-image">
-      <a href="/epic-ride-weather/"><img src="images/epicrideweather/logo.png" class="img-bordered" alt="Epic Ride Weather app"/></a>
+      <a href="http://www.epicrideweather.com"><img src="images/epicrideweather/logo.png" class="img-bordered" alt="Epic Ride Weather app"/></a>
     </div>
     <p>
       A unique approach to weather forecasts, for your ride, with your route, at your pace.
     </p>
     <p>
-    Check out <a href="/epic-ride-weather/">Epic Ride Weather</a>.
+    Check out <a href="http://www.epicrideweather.com">Epic Ride Weather</a>.
     </p>
   </div>
   <div class="col-sm-4 col-md-4">
