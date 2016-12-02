@@ -2,6 +2,7 @@
 title: Tips for the Most Accurate Forecasts
 date: '2016-11-16T12:00:00.000-08:00'
 modified_time: '2016-11-16T12:00:00.000-08:00'
+redirect_to: http://www.epicrideweather.com/2016/11/16/best-time-for-forecast/
 ---
 
 Epic Ride Weather uses [Dark Sky](http://darksky.net) to get the best forecasts available.  Their magic sauce is the use of [neural nets and computer vision](http://blog.darksky.net/cleaning-radar-images-using-neural-nets-computer-vision/) to analyze radar images, producing highly accurate short-term forecasts.

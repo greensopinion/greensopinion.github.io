@@ -4,6 +4,7 @@ date: '2016-10-17T12:00:00.000-08:00'
 modified_time: '2016-10-17T12:00:00.000-08:00'
 tags:
   - iOS
+redirect_to: http://www.epicrideweather.com/2016/10/17/ios-launch/
 ---
 
 The [Epic Ride Weather](/epic-ride-weather/) app, previously only [available for Android](/epic-ride-weather/post/2016-06-19-android-launch/), was released today for iOS devices such as iPhone and iPad.

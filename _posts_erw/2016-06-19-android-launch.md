@@ -4,6 +4,7 @@ date: '2016-06-19T12:00:00.000-08:00'
 modified_time: '2016-06-19T12:00:00.000-08:00'
 tags:
   - Android
+redirect_to: http://www.epicrideweather.com/2016/06/19/android-launch/
 ---
 
 I'm happy to announce that today the [Epic Ride Weather](/epic-ride-weather/) app was launched for Android.

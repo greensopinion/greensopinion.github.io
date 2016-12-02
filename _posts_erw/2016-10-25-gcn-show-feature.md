@@ -6,6 +6,7 @@ tags:
   - iOS
   - Android
   - GCN
+redirect_to: http://www.epicrideweather.com/2016/10/25/gcn-show-feature/
 ---
 
 Epic Ride Weather was featured on the [GCN Show](https://www.youtube.com/watch?v=-aSCBcGdNG0&t=13m13s)!

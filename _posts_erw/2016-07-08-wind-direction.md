@@ -4,6 +4,7 @@ date: '2016-07-08T12:00:00.000-08:00'
 modified_time: '2016-07-08T12:00:00.000-08:00'
 tags:
   - Android
+redirect_to: http://www.epicrideweather.com/2016/07/08/wind-direction/
 ---
 
 There is perhaps no aspect of weather that can affect the effort of a ride more than wind.  Making a simple left turn can transform your average ride into a grueling suffer-fest, legs burning and only the force of sheer will moving the bike forward at a fraction of its previous pace.  We've all experienced this ride - so it should come as no surprise that wind direction forecasts are the most requested feature from Epic Ride Weather users.
