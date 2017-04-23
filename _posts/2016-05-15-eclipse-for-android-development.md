@@ -6,7 +6,7 @@ author: David Green
 tags:
   - Android
   - Eclipse
-modified_time: '2016-05-05T12:00:00.000-08:01'
+modified_time: '2017-04-32T12:40:00.000-08:00'
 comments: true
 ---
 
@@ -15,6 +15,9 @@ Using the best tool for the job has a direct impact to my overall sense of well-
 I found that learning Android Studio was pretty straight-forward.  I was up and running, creating a reasonable Android app within a couple of days, forcing myself to learn the "IntelliJ-way", key bindings and all.  After a couple of weeks rolled by, then months, I realized that my creativity was being hampered because I just couldn't hit the flow in IntelliJ.  The friction was affecting me: my code had fewer unit tests than I would like, and simple tasks were taking too long.  IntelliJ was just slowing me down too much and it was impacting my project.
 
 Seeing that [Gradle buildship](http://gradle.org/eclipse/) doesn't yet support Android projects, A quick google for ``"Gradle generate Eclipse classpath"`` and I [landed on this StackOverflow](http://stackoverflow.com/questions/17470831/how-to-use-gradle-to-generate-eclipse-and-intellij-project-files-for-android-pro).  With a few Gradle edits to `build.gradle`, I was able to generate the Eclipse `.classpath` and `.project` files needed to start editing Java source in Eclipse.  My configuration is based on the answer provided by [Johannes Brodwall](http://stackoverflow.com/users/27658/johannes-brodwall):
+
+_Update for 2017, the approach outlined here is now available as a Gradle plugin: see [Using Eclipse for Android Development in 2017](/2017/04/23/eclipse-for-android-development.html)_
+
 
     apply plugin: 'eclipse'
 
