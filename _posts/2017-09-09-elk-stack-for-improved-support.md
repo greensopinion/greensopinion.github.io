@@ -8,7 +8,7 @@ tags:
   - Elasticsearch
   - Logstash
   - Kibana
-modified_time: '2017-09-09T15:11:00.000-08:00'
+modified_time: '2017-09-09T16:05:00.000-08:00'
 comments: true
 ---
 
@@ -106,7 +106,7 @@ All that remains to get this working is the beats configuration, `02-beats-input
       }
     }
 
-After creating those files I ended up with the following files:
+After creating those files I ended up with the following:
 
     ./
     ./docker-compose.yml
