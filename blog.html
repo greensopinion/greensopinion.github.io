@@ -25,7 +25,7 @@ permalink: /blog/
 <div id="disqus_thread"></div>
 <script>
 var disqus_config = function () {
-this.page.url = '{{ page.url | replace:'index.html','' | prepend: site.url }}';
+this.page.url = '{{ post.url | replace:'index.html','' | prepend: site.url }}';
 this.page.identifier = "{{ site.disqusid }}{{ post.url | replace:'index.html','' }}";
 };
 
