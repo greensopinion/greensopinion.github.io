@@ -38,7 +38,7 @@ Welcome to Green's Opinion!  Below you'll see some of my open source projects an
 <div class="row">
   <div class="col-sm-4 col-md-4">
     <h3><a href="https://wiki.eclipse.org/Mylyn/WikiText">WikiText</a></h3>
-    <div class="project-image"><i class="fa fa-code fa-5x code-icon"></i></div>
+    <div class="project-image"><i class="fa fa-code fa-5x code-icon" aria-hidden="true"></i></div>
     <p>A software library and tools for for transforming and rendering wiki markup, rich text and HTML.</p>
     <p>
     See <a href="https://wiki.eclipse.org/Mylyn/WikiText">WikiText at eclipse.org</a>
