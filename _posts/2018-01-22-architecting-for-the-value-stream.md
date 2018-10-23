@@ -8,6 +8,7 @@ tags:
 modified_time: '2018-01-22T12:00:00.000-08:00'
 original_url: https://sdtimes.com/arch/architecting-value-stream/
 comments: true
+listing_image: /images/blog/2018-01/software-architecture.jpeg
 ---
 
 More features, faster time to market, fewer defects.  These are what organizations strive for. But an overly narrow continuous integration and continuous delivery focus on DevOps is insufficient to achieve these goals. Instead, we should be taking a whole-system point of view that considers factors beyond development and operations — including people, teams, processes and tools.  By taking a constraints perspective, we can identify and address flow-limiting aspects of our value stream.

@@ -8,6 +8,7 @@ tags:
   - Build Time
 modified_time: '2018-06-13T12:30:00.000-08:00'
 comments: true
+listing_image: /images/blog/2018-06/build-success.png
 ---
 
 We've all seen those projects that start with fast builds. Fast builds that build everything and run all of the tests are a great way to get feedback on your code review, whether it be [Travis commenting on your GitHub Pull Request](https://docs.travis-ci.com/user/pull-requests/) or [Jenkins voting on your Gerrit code review](https://wiki.jenkins.io/display/JENKINS/Gerrit+Trigger). It's almost inevitable that successful projects end up with growing build times, often to the point where the feedback loop on our changes is out of control.  This post is about solving that problem.

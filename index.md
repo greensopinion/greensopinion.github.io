@@ -2,51 +2,42 @@
 layout: page
 ---
 
-Welcome to Green's Opinion!  Below you'll see some of my open source projects and recent blog posts:
 
-<div class="row">
-  <div class="col-sm-4 col-md-4">
-    <h3><a href="http://www.epicrideweather.com">Epic Ride Weather</a></h3>
-    <div class="project-image">
+Welcome to Green's Opinion!  Below you'll see some of my projects, open source and recent blog posts:
+
+<div class="row project-listing">
+  <div class="col-sm-6 col-md-6 project-item">
+    <h3 class="project-title"><a href="http://www.epicrideweather.com">Epic Ride Weather</a></h3>
+    <span class="project-image pull-left">
       <a href="http://www.epicrideweather.com"><img src="images/epicrideweather/logo.png" class="img-bordered" alt="Epic Ride Weather app"/></a>
-    </div>
+    </span>
     <p>
-      A unique approach to weather forecasts, for your ride, with your route, at your pace.
-    </p>
-    <p>
-    Check out <a href="http://www.epicrideweather.com">Epic Ride Weather</a>.
-    </p>
-  </div>
-  <div class="col-sm-4 col-md-4">
-    <h3><a href="https://github.com/greensopinion/greenbeans">Green Beans</a></h3>
-    <div class="project-image">
-      <img src="images/blog/greenbeans-report.png" class="img-rounded img-bordered" alt="GreenBeans app"/>
-    </div>
-    <p>
-      A personal finance app designed for simplicity and security.
-    </p>
-    <p>
-    See <a href="https://github.com/greensopinion/greenbeans">GreenBeans on GitHub</a>
+      <a href="http://www.epicrideweather.com">
+      A unique weather app for cyclists that integrates with Strava, Ride With GPS, Komoot and others.
+      </a>
     </p>
   </div>
-  <div class="col-sm-4 col-md-4">
-    <h3><a href="/blog">Blog</a></h3>
-    {% include recent_posts.html %}
-  </div>
+  <div class="col-sm-6 col-md-6 project-item">
+    <h3 class="project-title"><a href="https://wiki.eclipse.org/Mylyn/WikiText">WikiText</a></h3>
+    <span class="project-image pull-left"><a href="https://wiki.eclipse.org/Mylyn/WikiText"><i class="fa fa-code code-icon" aria-hidden="true"></i></a></span>
+    <p>
+      <a href="https://wiki.eclipse.org/Mylyn/WikiText">A software library and tools for for transforming and rendering wiki markup, rich text and HTML.</a>
+    </p>
+  </div>  
 </div>
 
-<div class="row">
-  <div class="col-sm-4 col-md-4">
-    <h3><a href="https://wiki.eclipse.org/Mylyn/WikiText">WikiText</a></h3>
-    <div class="project-image"><i class="fa fa-code fa-5x code-icon" aria-hidden="true"></i></div>
-    <p>A software library and tools for for transforming and rendering wiki markup, rich text and HTML.</p>
-    <p>
-    See <a href="https://wiki.eclipse.org/Mylyn/WikiText">WikiText at eclipse.org</a>
-    </p>
-  </div>
-  <div class="col-sm-4 col-md-4">
-    <h3><a href="https://github.com/greensopinion/swagger-jaxrs-maven">Swagger Generator</a></h3>
-    <p>Provides a Maven plug-in that can generate <a href="http://swagger.io">Swagger</a> documentation for JAX-RS web services.</p>
-    <p>See <a href="https://github.com/greensopinion/swagger-jaxrs-maven">swagger-jaxrs-maven on GitHub</a></p>
-  </div>
-</div>
+<ul class="post-listing">
+{% for post in site.posts limit:6 %}
+<li>
+  <h3 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+  <p>
+  {% if post.listing_image %}
+  <span class="feature-image pull-left"><a href="{{ post.url }}"><img src="{{post.listing_image}}"/></a></span>
+  {% endif %}
+  {{ post.content | strip_html | truncatewords:80 }}  <a href="{{ post.url }}" class="text-primary">continue</a>
+  </p>
+</li>
+{% endfor %}
+<li><h3 class="post-title"><a href="{{ "/archive" | prepend: site.baseurl }}">All Articles</a></h3></li>
+</ul>
+

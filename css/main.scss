@@ -94,6 +94,27 @@ li p:only-child {
   color: inherit;
 }
 
+.post-listing {
+  margin-left: inherit;
+}
+
+.post-listing li {
+  list-style: none;
+}
+
+.project-title a {
+  color: inherit;
+}
+
+.project-image .fa {
+  font-size: 7em;
+}
+
+.feature-image {
+  width: 250px;
+  margin-right: 10px;
+}
+
 i.icon {
   color: #828282;
   font-size: 16px;
@@ -104,19 +125,39 @@ i.icon {
   box-shadow: 0px 1px 2px rgba(0,0,0,.2);
 }
 
-div.project-image {
+.project-image {
   img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 6px;
+    margin-right: 10px;
     width: 120px;
   }
   .code-icon {
     color: rgba(0,0,0,0.68);
     margin-top: -10px;
+    display: block;
+    margin-bottom: 6px;
+    margin-right: 10px;
+    width: 120px;
   }
 }
+
+.project-item {
+  min-height: 150px;
+}
+
+.project-item a {
+  color: inherit;
+}
+
+.project-listing {
+  margin-bottom: 20px;
+}
+
+.project-listing .project-image a:hover {
+  text-decoration: none;
+}
+
 
 .alignleft {
   display: inline;

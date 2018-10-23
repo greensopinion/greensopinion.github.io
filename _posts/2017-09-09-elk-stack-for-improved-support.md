@@ -10,6 +10,7 @@ tags:
   - Kibana
 modified_time: '2017-09-09T16:05:00.000-08:00'
 comments: true
+listing_image: /images/blog/2017-09/kibana-dashboard.png
 ---
 
 The ELK stack, composed of [Elasticsearch](https://www.elastic.co/products/elasticsearch), [Logstash](https://www.elastic.co/products/logstash) and [Kibana](https://www.elastic.co/products/kibana), is world-class dashboarding for real-time monitoring of server environments, enabling sophisticated analysis and troubleshooting.  Could we also leverage this great tooling to our advantage in situations where access to the server environment is an impossibility?  Recently while investigating a customer support case, I looked into whether or not we could create a repeatable process to enable analysis of log files provided as part of a support case.  Following are details of the approach that we came up with.

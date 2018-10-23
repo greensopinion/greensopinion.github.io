@@ -7,6 +7,7 @@ tags:
   - Architecture
 modified_time: '2018-04-27T13:30:00.000-08:00'
 comments: true
+listing_image: /images/blog/2018-04/simple-generated-diagram-detail.png
 ---
 
 Code review tools such as [GitHub PRs](https://github.com/features/code-review) and [Gerrit](https://www.gerritcodereview.com) do a a great job of enabling developers to collaborate, but their file- and line-oriented approach leaves abstractions out of the picture.  Developers must have the capacity to see the abstractions by reading the code, or risk having code reviews devolve into a critique of syntax, whitespace and implementation detail. The intrinsic ability to see abstractions comes easily for some, but others are at a disadvantage especially when less familiar with the codebase.  To address this issue, I conducted an experiment in surfacing code abstractions as a diagram in code reviews.

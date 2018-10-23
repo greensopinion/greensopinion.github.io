@@ -7,6 +7,7 @@ tags:
   - WikiText
 modified_time: '2017-03-22T15:14:00.000-08:00'
 comments: true
+listing_image: /images/blog/2017-03/ios_inapp_already_bought.png
 ---
 
 If you're developing iOS apps with in-app purchases, chances are you've seen this dreaded dialog and wondered why `SKPaymentQueue` isn't calling your `SKPaymentTransactionObserver`.
